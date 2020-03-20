@@ -632,7 +632,7 @@ class IQOptionAPI(object):  # pylint: disable=too-many-instance-attributes
     def set_session_cookies(self):
         """Method to set session cookies."""
         cookies = dict(platform="15")
-        self.session.headers["User-Agent"] = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+        self.session.headers["User-Agent"] = " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4031.0 Safari/537.36"
         requests.utils.add_dict_to_cookiejar(self.session.cookies, cookies)
 
     def connect(self):
